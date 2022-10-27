@@ -22,7 +22,7 @@ password.addEventListener('keyup', () => {
     password.style.outline = 'none';
     btn.style.position = 'absolute';
     btn.style.bottom = '-50px';
-    btn.style.left = '0px';
+    btn.style.left = '16px';
   }
 
   document
@@ -37,12 +37,12 @@ password.addEventListener('keyup', () => {
         console.log('Top', eleTop);
         if (elemWidth != eleTop) {
           btn.style.removeProperty('right');
-          btn.style.left = '0px';
+          btn.style.left = '16px';
           elemWidth = elemWidth - parseInt('38px');
           event.stopImmediatePropagation();
         } else {
           btn.style.removeProperty('left');
-          btn.style.right = '0px';
+          btn.style.right = '16px';
           elemWidth = elemWidth + parseInt('38px');
           event.stopImmediatePropagation();
         }
